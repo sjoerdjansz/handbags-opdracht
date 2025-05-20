@@ -7,6 +7,7 @@ import {bags} from "./Constants/products.js";
 
 import {Button} from "./components/Button.jsx";
 import {Product} from "./components/Product.jsx";
+import {Tile} from "./components/Tile.jsx";
 
 function App() {
     function handleClick(value) {
@@ -28,27 +29,24 @@ function App() {
                 })}
             </main>
             <footer>
-                <section>
+                <Tile>
                     <h2>The brand</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque excepturi expedita
-                        magni mollitia nobis provident vero! Ad doloremque laborum saepe?</p>
-
-                    <p> Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Doloremque excepturi expedita
-                        magni mollitia nobis provident vero! Ad doloremque laborum saepe?</p>
-                </section>
-                <section>
-                    <img src={brand} alt="brand"/>
-                </section>
-                <section>
-                    <img src={ourStory} alt="brand"/>
-                </section>
-                <section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem eligendi tempora!
+                        Assumenda, facilis, temporibus. A ab fugit harum ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem eligendi tempora!
+                        Assumenda, facilis, temporibus. A ab fugit harum ipsa!</p>
+                </Tile>
+                <Tile>
+                    <img src={brand} alt="the brand"/>
+                </Tile>
+                <Tile>
+                    <img src={ourStory} alt="our story"/>
+                </Tile>
+                <Tile>
                     <h2>Our story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque excepturi expedita
-                        magni mollitia nobis provident vero! Ad doloremque laborum saepe? Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Illo, sit.</p>
-                </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem eligendi tempora!
+                        Assumenda, facilis, temporibus. A ab fugit harum ipsa!</p>
+                </Tile>
 
             </footer>
         </>
